@@ -10,4 +10,4 @@ def register(request):
 	registered = False
 	
 	if request.method == "POST":
-		
+		user_form = UserForm(data=request.POST)
