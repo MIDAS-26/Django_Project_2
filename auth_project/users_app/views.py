@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
+from users_app.models import UserProfileInfo
 
 # Create your views here.
 
@@ -11,3 +13,4 @@ def register(request):
 	
 	if request.method == "POST":
 		user_form = UserForm(data=request.POST)
+		profile_form = UserProfileInfoForm(data=request.POST)
