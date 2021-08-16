@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from users_app.models import UserProfileInfo
+from users_app.forms import *
 
 # Create your views here.
 
