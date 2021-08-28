@@ -20,7 +20,9 @@ from users_app import views
 
 urlpatterns = [
     url(r"^$", views.index, name="index"),
-    url('admin/', admin.site.urls),
-    url(r"users_app/", include("users_app.urls"))
+    url(r'^admin/', admin.site.urls),
+    url(r"^users_app/", include("users_app.urls")),
+    url(r"^logout/$", views.user_logout, name="user_logout"),
+
 
 ]
